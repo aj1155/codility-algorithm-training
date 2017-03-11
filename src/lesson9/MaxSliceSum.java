@@ -3,11 +3,17 @@ package lesson9;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ * 
+ * @author Manki Kim
+ * Kadane 알고리즘을 이용하는 문제
+ */
+
 public class MaxSliceSum {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = {3,2,-6,4,0};
+		int[] arr = {10,-4,3,1,5,6,-35,12,21,-1};
 		System.out.println(solution(arr));
 	}
 	
@@ -17,7 +23,6 @@ public class MaxSliceSum {
         for (int i : A) {
             meh = Math.max(i, meh + i);
             msf = Math.max(msf, meh);
-            System.out.println(meh + " " + msf);
         }
         return (int) msf;
 	}
