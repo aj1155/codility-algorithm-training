@@ -38,9 +38,7 @@ public class BaekJoon1874 {
 					break;
 				}
 				cur = A[j];
-			}	
-			
-			
+			}				
 		}
 		result.stream().forEach(System.out::println);
 	}
